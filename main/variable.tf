@@ -7,7 +7,7 @@ variable "sunny" {
 variable "location" {
     description = "Location where the resources will be created"
     type = string
-    default = "uksouth"  
+    default = "ukwest"  
 }
 
 variable "tags" {
@@ -15,7 +15,7 @@ variable "tags" {
     type = map(any)
     default =  {
        "environment" = "dev"
-       "source"      = "terraform"
+       "source"      = "git_hub"
        "purpose"     = "testing" 
  } 
 }
@@ -23,7 +23,7 @@ variable "tags" {
 variable "org_name" {
     description = "organisation Name."
     type = string
-    default = "schoolname"  
+    default = "online"  
 }
 
 variable "project_name" {
